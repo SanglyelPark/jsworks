@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 정의와 호출</title>
+</head>
+<body>
+    <h2>증가하는 함수 정의</h2>
+    <script>
+        let x = 1;
+        
+        //oneUp()함수
+        function oneUp(){
+            x++;
+            return x; // return 후 x 변수는 소멸한다....
+        }
+
+        document.write(oneUp() + "<br>");
+        document.write(oneUp() + "<br>");
+        // document.write(x);  // x 변수는 정의하지 않은 변수로 인식함
+    </script>
+    
+</body>
+</html>
