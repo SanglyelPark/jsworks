@@ -30,7 +30,8 @@
         let member = prompt("전체 응모자 수 : ");
         
         let winner_ex = prompt("당첨자 수 : ");
-        let winner = new Array(parseInt(winner_ex)); //입력은 문자가 들어옴 - win을
+        // let winner = new Array(parseInt(winner_ex)); //입력은 문자가 들어옴 - win을
+        let winner = new Array(Number(winner_ex)); //입력은 문자가 들어옴 - win을
         
         if(member == null || winner == null){
             document.write("<p>입력이 취소되었습니다.")
@@ -42,11 +43,20 @@
         //발표
         else {
         document.write("<p>전체 응모자 : " + member + "명</p>");
-        document.write("<p>당첨자 : " );
+        document.write("<p>당첨자  중복 " );
         }
 
         for(let i = 0; i < winner.length; i++){
-        winner[i] = Math.floor(Math.random()* member) + 1;
+            winner[i] = Math.floor(Math.random()* member) + 1;
+            for(let j = 0 ; j < i ; j++){
+                if(winner[j] == winner[i]) { // 중복되었다면
+                document.write(winner[i] + "번 <br>")
+                   i--;  
+               } 
+             }
+        }
+        document.write("<p>최종 당첨자 : " );
+        for(let i = 0; i < winner.length; i++){      
         document.write( winner[i] + "번, ");
         }
     </script>

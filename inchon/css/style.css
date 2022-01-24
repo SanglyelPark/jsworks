@@ -1,0 +1,270 @@
+
+/* 전체 영역 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Nanum+Pen+Script&display=swap');
+*{margin: 0; padding: 0;}
+#container{width: 1100px; margin: 0 auto;}
+
+/* header 영역 */
+header{height: 80px; background-color: white;}
+header #logo{width: 100px; float: left; padding: 30px 10px;}
+/* header #logo h1{font-family: Merienda;} */
+/* header #logo a{text-decoration: none; color:yellow} */
+header nav{width: 600px; float:right;}
+header #topMenu{list-style: none; text-align: right ; margin-right: 20px;}
+header #topMenu li{display: inline-block; margin: 15px; padding: 30px 5px 1px 5px;}
+header #topMenu li a{font-family:D2Coding;text-decoration: none; color: rgb(8, 8, 8);}
+header #topMenu li a:hover{color: #cec9c9;}
+
+/* index 스타일 */
+#contents{width: 1100px; height: 1400px; margin:1px auto;}
+#contents section{margin: 1px auto;}
+#contents section div{margin: 20px auto;}
+#contents h1{color:rgb(97, 97, 248);font: 3em;font-family: D2Coding;}
+#contents p{line-height: 1.5em;font-size: 1em;}
+
+#contents #location h1{ color: #00f;
+    margin: 40px; font-size: large; font-family:D2Coding;
+    border: 1px solid #eee;
+}
+#contents #location img{text-align: center;
+    margin: 30px 50px; font-family: D2Coding;
+}
+
+
+/*
+#contents #weather h2{color: #00f;
+    margin: 10px;  font-family: HY울릉도B;
+}
+#contents #weather p{
+    margin: 10px;  font-family: D2Coding;
+}
+#contents #city h2{color: #00f;
+    margin: 10px;  font-family: HY울릉도B;
+}
+#contents #city p{
+    margin: 10px;  font-family: D2Coding;
+}
+#contents #area h2{color: #00f;
+    margin: 10px; font-family: HY울릉도B;
+}
+#contents #area p{
+    margin: 10px; font-family: D2Coding;
+}
+#contents #layer h2{color: #00f;
+    margin: 10px; font-family: HY울릉도B;
+}
+#contents #layer p{
+    margin: 10px; font-family: D2Coding;
+} */
+
+/********************************/
+/*   이미지 슬라이드 쇼 영역    */
+/********************************/
+
+#slideShow {   
+    clear:both;   /* 플로팅 해제 */
+    width:1100px;    /* 너비 */ 
+    height:300px;   /* 높이 */ 
+    overflow:hidden;   /* 영역 넘치면 감춤 */ 
+    position: relative;
+  }
+  #slides {
+    position: absolute;
+  }
+  #slides > img {
+    width:1100px;  /* 너비 */
+    float:left;  /* 가로로 배치 */
+  }
+  
+  button{
+    position: absolute;
+    height:275px;  /* 위아래 가득 차게 */ 
+    top:0;
+    border:none;  /* 테두리 없이 */  
+    padding: 10px;;
+    background-color: transparent;  /* 투명 배경 */ 
+    color:#000;  /* 화살표 색은 검정 */  
+    font-weight:800;  /* 굵게 */ 
+    font-size: 24px;  /* 화살표 크기 */ 
+    opacity: 0.5;  /* 반투명 */ 
+  }
+  #prev {
+    left:0;  /* 왼쪽으로 붙여서 */ 
+  }
+  #next {
+    right:0;  /* 오른쪽으로 붙여서 */ 
+  }
+  button:hover {
+    background-color:#222;  /* 짙은 회색 배경 */
+    color:#fff;   /* 흰색 화살표 */ 
+    opacity:0.6;   /* 불투명도를 조금 높임 */ 
+    cursor:pointer;  /* 커서 모양을 포인터로 */ 
+  }
+  button:focus {
+    outline:0;  /* 아웃트라인 없앰 */
+  }
+
+
+
+/* #contents #healing p{font-style: italic;color: crimson;}
+#contents #healing img{float: left; margin-right: 15px; border-radius: 10px;}
+#contents .schedule ul li{margin: 10xp 30px;list-style: none;}
+#contents #activity{height: 300px;}
+#contents #activity img{float: left; margin-right: 15px; border-radius: 10px;}
+#contents #sightseeing ul li{margin: 10xp 30px;list-style: square;}
+#contents #sightseeing a{text-decoration: none;color: black;}
+#contents #sightseeing a:hover{text-decoration: underline;} */
+
+
+/* product 스타일 */
+#product{width: 1100px; margin:10px auto;}
+#product #description{border-radius: 30px;}
+#product #description2{border-radius: 30px;}
+#product #description3{border-radius: 30px;}
+#product section{margin: 10px auto; 
+      border: 2px solid #ccc; 
+      padding: 20px 50px
+}
+
+
+/* travel 스타일 */
+#travel_main{width: 1000px; margin: 40px auto; 
+  /* text-align: center; */
+        /* float: left;  */
+
+        border: 2px solid rgb(172, 170, 170); 
+        padding: 20px 20px 30px ;
+        border-radius: 30px;
+        /* box-shadow: 2px 2px 2px 2px #8b8b8b; */
+}
+.rotate1 p{
+    font-family: D2Coding;
+    text-align: center;
+    line-height: 2em;
+    text-shadow: 1px 1px#929292;
+      /* font: HY엽서M; */
+    color: crimson;
+    }
+.rotate2 p{
+    font-family: D2Coding;
+    text-align: center;
+    line-height: 2em;
+    text-shadow: 1px 1px#929292;
+      /* font: HY엽서M; */
+    color: crimson;
+    }
+.rotate3 p{
+    font-family: D2Coding;
+    text-align: center;
+    line-height: 2em;
+    text-shadow: 1px 1px#929292;
+      /* font: HY엽서M; */
+    color: crimson;
+    }
+.rotate4 p{
+    font-family: D2Coding;
+    text-align: center;
+    line-height: 2em;
+    text-shadow: 1px 1px#929292;
+      /* font: HY엽서M; */
+    color: crimson;
+    }
+.rotate5 p{
+    font-family: D2Coding;
+    text-align: center;
+    line-height: 2em;
+    text-shadow: 1px 1px#929292;
+      /* font: HY엽서M; */
+    color: crimson;
+    }
+.rotate6 p{
+    font-family: D2Coding;
+    text-align: center;
+    line-height: 2em;
+    text-shadow: 1px 1px#929292;
+      /* font: HY엽서M; */
+    color: crimson;
+    }
+
+.rotate1:hover{transform: rotatey(10deg);}
+.rotate2:hover{transform: rotatey(10deg);}
+.rotate3:hover{transform: rotatey(10deg);}
+.rotate4:hover{transform: rotatey(10deg);}
+.rotate5:hover{transform: rotatey(10deg);}
+.rotate6:hover{transform: rotatey(10deg);}
+
+
+/* About Me 스타일 */
+/* h2{
+    list-style: url(../imges/button.jpg);
+    /* url (이미지경로) - 이미지 추가하는 함수 */
+} */
+#profile{width: 1100px; margin: 10px auto; }
+#profile section{margin: 30px 20px;}
+
+#profile section h2{margin: 5px; color: blue;}
+#profile section #myphoto{margin: 70px 50px;}
+#profile #intro{height: 350px;}
+#profile #intro h1{font-size: 2em;}
+#profile section #myintro{margin: 70px 50px; line-height: 1.6em;
+   font-size: 1.1em; font-family: D2Coding;    
+}
+#profile #intro img{float: left; margin-right: 10px; border-radius: 5px;}
+#profile #intro a{text-decoration: none; color: #00f;}
+#profile #intro a:hover{text-decoration: underline;}
+#profile #career ul li{margin: 16px 50px;}
+#profile #career div{margin: 20px 20px;}
+#profile #thank{text-align: center; margin: 16px 50px;}
+
+
+#profile #education ul li{margin: 16px 50px;}
+#profile #education div{margin: 20px 20px;}
+#profile #skill ul li{margin: 16px 50px;}
+#profile #skill ul li a{text-decoration: none; color: #00f;}
+#profile #skill ul li a:hover{text-decoration: underline; }
+
+/* footer 영역 */
+footer{height:100px; margin-top: 30px; border-top: 2px solid #222;}
+footer #bottomMenu{list-style: none; margin: 10px 10px 10px 50px;}
+footer #bottomMenu li{display: inline-block; margin: 10px 0; 
+    border-right: 1px solid #ccc; padding: 0 10px;}
+footer #bottomMenu li a{text-decoration: none; color: #444;}
+
+/* 인천역사 서브메뉴 */
+* {
+  box-sizing: border-box;
+}
+.top-menu {
+  margin:50px auto;
+  padding:0;
+  list-style:none;
+  width:902px;
+  height:50px;
+  box-shadow:0 3px 4px #8b8b8b;
+  background-color:#f5f4f4;
+}
+.top-menu li {
+  float:left; 
+  border-right:1px solid #929292;
+}
+.top-menu li a:link{
+  color:black;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  width:300px;
+  height:50px;
+  line-height: 50px;
+  transition: 0.5s ease-in; 
+}
+.top-menu li:last-child {
+  border-right:none;      
+}
+.top-menu li:not(:last-child) a:hover {
+  background-color:#555;
+  color:#fff;
+}
+.top-menu Li:last-child a:hover {
+  background-color:#555;
+  color:#fff;
+}

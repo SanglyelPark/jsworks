@@ -1,0 +1,47 @@
+#container{
+  width: 1000px;
+  margin: 20px auto;  /* 가운데 배치 */
+  /* border: 1px solid red; */
+  /* padding: 20px; */
+  border: none;
+  /* background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc); */
+}
+header{height: 80px;}
+nav{margin-bottom: 20px ;}
+section{width: 750px; height: 600px;}
+/* div{
+  width: 700px;
+  border: 1px solid rgb(48, 39, 39);
+  padding: 20px;
+  margin-bottom: 20px;
+} */
+#description{
+  border: 1px solid rgb(48, 39, 39);
+  height: 500px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  /* border-radius: 30px; */
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}    
+#description p{line-height: 2em;}
+#receipe{
+      border: 1px solid #ccc;
+      padding: 20px;
+}
+#receipe ol li{line-height: 2em;}
+
+#product{
+  border: 1px solid rgb(48, 39, 39);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  /* border-radius: 30px; */
+  /* background-image: linear-gradient(rgba(0, 0, 255, 0.5)); */
+}    
+table, th, td{
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  /* padding: 10px 20px; */
+}
+th, td{
+  padding: 10px 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut() 함수 예제</title>
+    <style>
+        section{
+            width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <h2>커피의 세계</h2>
+    <img src="images/coffee-blue.jpg" id="cup">
+    </section>
+ 
+    <script>
+        // 설정된 시간이 종료됨
+        let picture = ["./images/coffe_blue.jpg", "./images/coffe_gray.jpg","./images/coffe_pink.jpg"];
+        let msg_idx = 0;
+
+        showPicture();//호출
+
+        function showPicture(){
+            let pic =  document.getElementById("cup");
+            pic.src = picture[msg_idx];
+            msg_idx++;
+            if(msg_idx === picture.length){
+                msg_idx = 0;
+            }
+             setTimeout(showPicture,2000); // 콜백함수(함수의 매개변수로 함수를 설정)
+         }
+        
+        </script>
+</body>
+</html>
